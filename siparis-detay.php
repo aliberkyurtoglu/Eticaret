@@ -33,7 +33,7 @@
 				
 
 				<?php
-					$siparis_id=$sipariscek['siparis_id'];  
+					$siparis_id=$sipariscek['siparis_id'];
 					$siparissor=$db->prepare("SELECT * FROM siparis_detay WHERE kullanici_id=:id");
 					$siparissor->execute(array(
     					'id' => $kullanici_id

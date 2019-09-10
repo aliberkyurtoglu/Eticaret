@@ -19,23 +19,6 @@
         </ul>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="ads">
-        <a href="product.htm"><img src="images\ads.png" class="img-responsive" alt=""></a>
-    </div>
-
     <div class="title-bg">
         <div class="title">En Çok Stok</div>
     </div>

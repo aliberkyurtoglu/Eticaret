@@ -129,7 +129,7 @@
 					
 						<p>Ödeme yapacağınız bankayı seçerek işleme devam ediniz. Ödemeyi yaparken Açıklama kısmına sipariş no yazınız.</p>
 						<?php  
-							$bankaHsor=$db->prepare("SELECT * FROM bankaH ORDER BY bankaH_id ASC");
+							$bankaHsor=$db->prepare("SELECT * FROM banka ORDER BY bankaH_id ASC");
 							$bankaHsor->execute();
 						?>
 

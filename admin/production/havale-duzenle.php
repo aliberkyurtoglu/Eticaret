@@ -2,7 +2,7 @@
 
 include 'header.php'; 
 
-$bankaHsor=$db->prepare("SELECT * FROM bankaH where bankaH_id=:id");
+$bankaHsor=$db->prepare("SELECT * FROM banka where bankaH_id=:id");
 $bankaHsor->execute(array(
     'id' => $_GET['bankaH_id']
   ));

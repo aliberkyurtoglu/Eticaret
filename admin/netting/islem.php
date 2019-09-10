@@ -1450,7 +1450,7 @@ if (isset($_POST['sepetsil'])) {
 		/* HAVALE - EFT İŞLEMLERİ BAŞLANGIÇ */
 if (isset($_POST['bankaHekle'])) {
 
-	$kaydet=$db->prepare("INSERT INTO bankaH SET
+	$kaydet=$db->prepare("INSERT INTO banka SET
 		bankaH_ad=:bankaH_ad,
 		bankaH_iban=:bankaH_iban,
 		bankaH_hesapadsoyad=:bankaH_hesapadsoyad,
@@ -1485,7 +1485,7 @@ if (isset($_POST['bankaHekle'])) {
 if (isset($_POST['bankaHduzenle'])) {
 	$bankaH_id=$_POST['bankaH_id'];
 
-	$kaydet=$db->prepare("UPDATE bankaH SET
+	$kaydet=$db->prepare("UPDATE banka SET
 		bankaH_ad=:bankaH_ad,
 		bankaH_iban=:bankaH_iban,
 		bankaH_hesapadsoyad=:bankaH_hesapadsoyad,
@@ -1516,7 +1516,7 @@ if (isset($_POST['bankaHduzenle'])) {
 
 if ($_GET['bankaHsil']=="ok") {
 	islemkontrol();
-	$sil=$db->prepare("DELETE from bankaH where bankaH_id=:bankaH_id");
+	$sil=$db->prepare("DELETE from banka where bankaH_id=:bankaH_id");
 	$kontrol=$sil->execute(array(
 		'bankaH_id' => $_GET['bankaH_id']
 		));
@@ -1543,7 +1543,7 @@ if ($_GET['bankaHsil']=="ok") {
 if ($_GET['bankaH_durum']=="ok") {
 	islemkontrol();
 	
-	$duzenle=$db->prepare("UPDATE bankaH SET
+	$duzenle=$db->prepare("UPDATE banka SET
 		bankaH_durum=:bankaH_durum
 		WHERE bankaH_id={$_GET['bankaH_id']}");
 	

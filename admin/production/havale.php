@@ -3,7 +3,7 @@
 include 'header.php'; 
 
 //Belirli veriyi seçme işlemi
-$bankaHsor=$db->prepare("SELECT * FROM bankaH ORDER BY bankaH_id ASC");
+$bankaHsor=$db->prepare("SELECT * FROM banka ORDER BY bankaH_id ASC");
 $bankaHsor->execute();
 
 
