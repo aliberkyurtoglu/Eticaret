@@ -162,8 +162,8 @@ CREATE TABLE `kullanici` (
 --
 
 INSERT INTO `kullanici` (`kullanici_id`, `kullanici_zaman`, `kullanici_resim`, `kullanici_tc`, `kullanici_ad`, `kullanici_mail`, `kullanici_gsm`, `kullanici_password`, `kullanici_adsoyad`, `kullanici_adres`, `kullanici_il`, `kullanici_ilce`, `kullanici_unvan`, `kullanici_yetki`, `kullanici_durum`) VALUES
-(156, '2019-09-10 20:21:26', '', '14234567891', 'aliberkyurtoglu', 'aliberkyurtoglu@gmail.com', '5331673051', '715489fb6ea402c9f2c1a9ca98ad0b53', 'Ali Berk YURTOĞLU', 'Etlik', 'Ankara', 'Keçiören', '', '5', 1),
-(157, '2019-09-10 21:08:57', '', '', '', 'deneme@gmail.com', '', 'e10adc3949ba59abbe56e057f20f883e', 'Deneme', '', '', '', '', '1', 1);
+(156, '2019-09-10 20:21:26', '', '14234567891', 'demo-admin', 'demo-admin@gmail.com', '5331673051', 'e10adc3949ba59abbe56e057f20f883e', 'Demo Admin', 'Etlik', 'Ankara', 'Keçiören', '', '5', 1),
+(157, '2019-09-10 21:08:57', '', '', '', 'demo-musteri@gmail.com', '', 'e10adc3949ba59abbe56e057f20f883e', 'Demo Müşteri', '', '', '', '', '1', 1);
 
 -- --------------------------------------------------------
 
